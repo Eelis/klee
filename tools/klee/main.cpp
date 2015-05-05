@@ -1156,7 +1156,6 @@ int main(int argc, char **argv, char **envp) {
   llvm::InitializeNativeTarget();
 
   parseArguments(argc, argv);
-  sys::PrintStackTraceOnErrorSignal();
 
   if (Watchdog) {
     if (MaxTime==0) {
